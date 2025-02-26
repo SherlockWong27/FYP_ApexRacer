@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class ObjectCollision : MonoBehaviour
 {
+    /*
     public GameObject frontCarPart; // The front part of the car (could be a mesh or an empty object containing parts)
     public GameObject[] tires;      // Array for tires that might fall off
     public float impactThreshold = 5f;  // Minimum collision force required to trigger parts detaching
@@ -50,5 +51,5 @@ public class ObjectCollision : MonoBehaviour
             // Optionally, you can apply some force to simulate the "falling off" effect
             rb.AddForce(Vector3.up * 100f); // Add upward force to simulate the part falling off
         }
-    }
+    }*/
 }
