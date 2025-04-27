@@ -9,7 +9,7 @@ public class TimerController : MonoBehaviour
 {
     public TextMeshProUGUI timerText; // UI text to display the current lap time
     public TextMeshProUGUI bestTimerText; // UI text to display the best lap time
-
+    public CarPosition carPosition; // Reference to the car's position data
     public static float currentTime = 0f; // Current lap time
     private float bestTime = Mathf.Infinity; // Best lap time
 
@@ -44,5 +44,14 @@ public class TimerController : MonoBehaviour
 
         // Reset the current lap time
         currentTime = 0f;
+    }
+    public string GetBestTimeFormatted()
+    {
+        if (bestTime == Mathf.Infinity)
+            return ""; // If no valid lap time is recorded
+
+        int minutes = (int)(bestTime / 60);
+        float seconds = bestTime % 60;
+        return $"{minutes:00}:{seconds:00.00}";
     }
 }

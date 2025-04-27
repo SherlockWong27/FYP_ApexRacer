@@ -632,11 +632,7 @@ GameObject:
   - component: {fileID: 444735396803357212}
   - component: {fileID: 3269663533088369831}
   - component: {fileID: 598257695174027093}
-  - component: {fileID: 5849085912674956393}
   - component: {fileID: 7859667949672848808}
-  - component: {fileID: 6264325647428928562}
-  - component: {fileID: 1232668377827568654}
-  - component: {fileID: 7805755900345132622}
   - component: {fileID: 6509906398041292179}
   m_Layer: 0
   m_Name: Player
@@ -668,7 +664,7 @@ Transform:
   - {fileID: 834066047831322927}
   - {fileID: 3522688095626489665}
   m_Father: {fileID: 0}
-  m_RootOrder: -1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4487461706353980146
 MeshFilter:
@@ -763,94 +759,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 3.1628075, y: 2.4193895, z: 5.323662}
   m_Center: {x: 0, y: 1.3305179, z: 0}
---- !u!114 &5849085912674956393
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826329163941352220}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b7ca3fa9ce1cf64ab203f3dbe4198ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCamera: {fileID: 0}
-  hoodCamera: {fileID: 1085620834718948821}
-  Front_Wheels:
-  - {fileID: 5144234932414288394}
-  - {fileID: 7460607077075138654}
-  Back_Wheels:
-  - {fileID: 5975840544106917898}
-  - {fileID: 2965360618606083506}
-  Front_Wheel_Transforms:
-  - {fileID: 6979647512816462217}
-  - {fileID: 6090413855859576624}
-  Back_Wheel_Transforms:
-  - {fileID: 8441348888457153061}
-  - {fileID: 1990107994193491566}
-  Front_Wheel_Rotation:
-  - {x: 0, y: 360, z: 0}
-  - {x: 0, y: 360, z: 0}
-  Back_Wheel_Rotation:
-  - {x: 0, y: 360, z: 0}
-  - {x: 0, y: 360, z: 0}
-  Motor_Torque: 400
-  Max_Steer_Angle: 25
-  BrakeForce: 150
-  Maximum_Speed: 200
-  handBrakeFrictionMultiplier: 2
-  tempo: 0
-  enable_boost: 0
-  Boost_Cooldown: 10
-  Boost_Amount: 10
-  Boost_KeyCode: 0
-  Enable_Boost_particles: 0
-  Boost_particles: []
-  Use_Car_States: 0
-  Car_Started: 0
-  Car_Start_Key: 0
-  Car_Off_Key: 0
-  Enable_Audio: 0
-  Enable_Engine_Audio: 0
-  Engine_Sound: {fileID: 0}
-  Minimum_Pitch_Value: 0
-  Maximum_Pitch_Value: 0
-  Enable_Horn: 0
-  Horn_Source: {fileID: 0}
-  Car_Horn_Key: 0
-  Enable_Crash_Noise: 0
-  Crash_Object_Tags: []
-  Crash_Sound: {fileID: 0}
-  Set_Drift_Settings_Automatically: 1
-  Forward_Extremium_Value_When_Drifting: 0
-  Sideways_Extremium_Value_When_Drifting: 0
-  Enable_Headlights_Lights: 0
-  Enable_Brakelights_Lights: 0
-  Enable_Reverselights_Lights: 0
-  Headlights_Key: 0
-  HeadLights: []
-  BrakeLights: []
-  ReverseLights: []
-  Enable_Headlights_MeshRenderers: 0
-  Enable_Brakelights_MeshRenderers: 0
-  Enable_Reverselights_MeshRenderers: 0
-  HeadLights_MeshRenderers: []
-  BrakeLights_MeshRenderers: []
-  ReverseLights_MeshRenderers: []
-  Use_Particle_Systems: 0
-  Car_Smoke_From_Silencer: []
-  Use_Scene_Settings: 0
-  Scene_Reset_Key: 114
-  Center_of_Mass: {fileID: 2840062107062251404}
-  frictionMultiplier: 3
-  Car_Rigidbody: {fileID: 7859667949672848808}
-  Car_Speed_KPH: 0
-  Car_Speed_MPH: 0
-  HeadLights_On: 0
-  Car_Speed_In_KPH: 0
-  Car_Speed_In_MPH: 0
-  currSpeed: 0
 --- !u!54 &7859667949672848808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -878,59 +786,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &6264325647428928562
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826329163941352220}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 492c5fc8acf22384384230ef0eae2dab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 0}
-  agent: {fileID: 0}
-  normalSpeed: 10
-  cornerSpeed: 3
-  turnAngleThreshold: 45
---- !u!114 &1232668377827568654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826329163941352220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f66760891b8c91a47903ffbb0f44b909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7805755900345132622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3826329163941352220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70aa11d41dc603a4992de5f8711b0dd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxMotorTorque: 1500
-  maxSteeringAngle: 30
-  brakeTorque: 300
-  maxSpeed: 50
-  frontLeftWheel: {fileID: 5144234932414288394}
-  frontRightWheel: {fileID: 7460607077075138654}
-  rearLeftWheel: {fileID: 5975840544106917898}
-  rearRightWheel: {fileID: 2965360618606083506}
-  frontLeftTransform: {fileID: 6979647512816462217}
-  frontRightTransform: {fileID: 6090413855859576624}
-  rearLeftTransform: {fileID: 8441348888457153061}
-  rearRightTransform: {fileID: 1990107994193491566}
 --- !u!114 &6509906398041292179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,6 +799,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputID: 1
+  backCamera: {fileID: 0}
+  frontCamera: {fileID: 0}
 --- !u!1 &4610560439374150977
 GameObject:
   m_ObjectHideFlags: 0

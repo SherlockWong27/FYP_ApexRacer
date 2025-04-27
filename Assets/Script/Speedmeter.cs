@@ -6,7 +6,7 @@ using UnityEngine;
 public class Speedmeter : MonoBehaviour
 {
     public TextMeshProUGUI Speed_Text; // Reference to the UI text for displaying speed
-    public CarController2 carController; // Reference to the CarController script
+    public CarController carController; // Reference to the CarController script
     public bool Speed_In_KPH = true; // Display speed in km/h (true) or mph (false)
 
     private void Update()

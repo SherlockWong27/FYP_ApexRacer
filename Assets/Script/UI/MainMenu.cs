@@ -8,7 +8,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private Button singlePlayerButton = null;
     [SerializeField] private Button twoPlayerButton = null;
     [SerializeField] private Button instructionButton = null;
+    [SerializeField] private Button exitButton = null;
     [SerializeField] public GameObject elements = null;
+
     //Getter function to get the instance of the class
     private static MainMenu instance = null;
     public static MainMenu instanceClass
@@ -34,6 +36,7 @@ public class MainMenu : MonoBehaviour
         singlePlayerButton.onClick.AddListener(PlayOnePlayer);
         twoPlayerButton.onClick.AddListener(PlayTwoPlayer);
         instructionButton.onClick.AddListener(OpenInstruction);
+        exitButton.onClick.AddListener(ExitGame);
     }
 
     // Update is called once per frame
@@ -45,18 +48,24 @@ public class MainMenu : MonoBehaviour
     private void PlayOnePlayer()
     {
         SetStatus(false);
-        OnePlayer.instanceClass.SetStatus(true);
+        //OnePlayer.instanceClass.SetStatus(true);
+        TyresMenu.instanceClass.SetStatus(true);
     }
 
     private void PlayTwoPlayer()
     {
         SetStatus(false);
-        TwoPlayer.instanceClass.SetStatus(true);
+        TyreMenu2Player.instanceClass.SetStatus(true);
     }
 
     private void OpenInstruction()
     {
         SetStatus(false);
         Instruction.instanceClass.SetStatus(true);
+    }
+
+    private void ExitGame()
+    {
+        Application.Quit(); 
     }
 }
